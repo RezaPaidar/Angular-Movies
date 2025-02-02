@@ -8,5 +8,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-movies';
+  movie = {
+    title: 'spider-man',
+    releaseDate: new Date()
+  }
+
+  duplicateNumber(value: number): number{
+    return value * 2;
+  }
 }
